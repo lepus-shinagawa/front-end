@@ -1,3 +1,3 @@
 rm -rf docs
 mv dist docs
-sed -ie "s#/assets#./assets#g" docs/index.html
+find . -type f | xargs sed -i "s#/assets#./assets#g"
